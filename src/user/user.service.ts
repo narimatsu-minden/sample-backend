@@ -17,8 +17,8 @@ export class UserService {
     });
   }
 
-  findAll() {
-    return `This action returns all user`;
+  async findAll() {
+    return this.prisma.user.findMany();
   }
 
   findOne(id: number) {
