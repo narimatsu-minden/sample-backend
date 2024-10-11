@@ -13,6 +13,7 @@ export class UserService {
       data: {
         email: data.email,
         name: data.name,
+        age: data.age,
       },
     });
   }

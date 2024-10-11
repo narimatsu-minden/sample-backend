@@ -5,6 +5,7 @@
 type User {
   name: String!
   email: String!
+  age: String
 }
 
 type Query {
@@ -23,6 +24,9 @@ input CreateUserInput {
 
   """Userの名前"""
   name: String!
+
+  """Userの年齢"""
+  age: String
 }
 
 input UpdateUserInput {
@@ -31,5 +35,8 @@ input UpdateUserInput {
 
   """Userの名前"""
   name: String
+
+  """Userの年齢"""
+  age: String
   id: Int!
 }

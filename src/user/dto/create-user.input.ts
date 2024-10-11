@@ -7,4 +7,7 @@ export class CreateUserInput {
 
   @Field(() => String, { description: 'Userの名前' })
   name!: string;
+
+  @Field(() => String, { description: 'Userの年齢', nullable: true })
+  age!: string;
 }
